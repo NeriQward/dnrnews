@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ДНР - Главная</title>
+    <meta charset="utf-8">
+</head>
+<style>
+    #headerpic {
+        position: fixed;
+        border-color: rgb(0, 0, 0);
+        border-width: 30px;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 10px;
+    }
+    
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    #news {
+        background-color: rgb(102, 102, 102);
+        border-color: rgb(0, 0, 0);
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        border-width: 15px;
+        border-radius: 10px;
+        font-style: italic;
+    }
+    
+    #time {
+        background-color: rgb(174, 174, 174);
+        border-color: rgb(0, 0, 0);
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 8px;
+        border-width: 7px;
+        border-radius: 12px;
+        font-style: bold;
+        font-size: smaller
+    }
+</style>
+<script>
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("header").style.fontSize = "30px";
+        } else {
+            document.getElementById("header").style.fontSize = "90px";
+        }
+    }
+</script>
+<header>
+    <img src="header.png" id="headerpic"><img>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</header>
+
+<body>
+    <br>
+    <div id="news"><span id="time">Сейчас</span><a href="recent.html">Школьник из Донецка создал сообщество</a></div>
+    <br>
+    <div id="news"><span id="time">Сейчас</span><a href="https://ria.ru/20221026/inflyatsiya-1827030316.html">Повышение годовой инфляции</a></div>
+    <br>
